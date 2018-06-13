@@ -398,7 +398,7 @@
 
 			<div ng-show="questionnaire.index <= 10" class="row Button-Area">
 				
-					<button ng-click="questionnaire.previous()" class="pull-left btn">Previous</button>			
+					<button ng-show="questionnaire.index > 0" ng-click="questionnaire.previous()" class="pull-left btn">Previous</button>			
 					<button ng-show="questionnaire.index <= 9" ng-click="questionnaire.next()" class="pull-right btn btn-danger">Next</button>	
 			</div>
 			<!--</div> -->
