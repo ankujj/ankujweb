@@ -52,6 +52,10 @@
 				this.Dialogues=QuestionnaireService.getFileContentAsJSON($fileContent);
 			}
 
+	
+		this.goToAssessment = function(){
+			this.index = QuestionnaireService.goToAssessment();
+		}
 	}
 
 
@@ -87,6 +91,10 @@
 			this.getDialogues = function(){
 				return Dialogues;
 				
+			}
+			this.goToAssessment = function(){
+				index=9;
+				return index;
 			}
 			this.getFileContentAsJSON = function($fileContent){
 
