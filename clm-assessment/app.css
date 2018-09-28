@@ -12,7 +12,9 @@
 }
 
 
-
+#header-nav{
+    background-color:#D81E05;
+}
 
 
 .info-message{
@@ -51,10 +53,11 @@ section, article{
 
 .header-text {
 	font-style: bold;
-	margin-left:20px;
+	margin-left:250px;
 	text-align: center;
 	font-size:30px;
 	font-family: verdana;
+	color:white;
 }
 button {
 	width:15%;

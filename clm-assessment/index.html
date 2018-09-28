@@ -20,7 +20,7 @@
 		<header> <!-- Semantic Html5 tag -->
 
 		    <nav id="header-nav" class="navbar navbar-default">  <!-- creates a header bar -->
-		      <div class="container">   <!-- container class used versus container-fluid since we dont want content to stretch with the viewport -->
+		      <div class="container-fluid">   <!-- container class used versus container-fluid since we dont want content to stretch with the viewport -->
 		      <!-- at 551px the header gets skewed so please fix it later -->
 		       <img src="images/scotiabanklogo.gif" alt="For ScotiaBank" height=50px width=225px class="pull-left"> 
 		        <div class="navbar-header"> 
@@ -49,7 +49,12 @@
 			<!--<div ng-show="questionnaire.Dialogues.length >0 && questionnaire.index+1<=questionnaire.Dialogues.length"> -->
 
 			<!--- Questions --->
+			<div ng-show="questionnaire.index <= 8" class="pull-right">
+				<a  href="#"  ng-click="questionnaire.goToAssessment()">Click here to skip Questionnaire and jump directly to Assessment</a>
+			</div>
+			<div class="clearfix" style="margin-bottom:20px"></div>
 		<div ng-show="questionnaire.index <= 8" class="row List">
+			
 			<div class="col-md-6">
 					<div>
 						<strong>Prospect</strong>
@@ -63,7 +68,7 @@
 						I was wondering if you could offer us any advise on how to go about it
 					</div>			
 					<div ng-switch-when="1">
-						&nbsp&nbsp&nbsp<i>Wow! That's great.</i> <br><br>
+						
 						&nbsp&nbsp&nbspWould you be able to provide me details about how that's possible
 					</div>
 					<div ng-switch-when="2">
@@ -163,7 +168,7 @@
 				 	</div>
 					
 					<div ng-switch-when="1">
-				 		&nbsp&nbsp&nbspSure, We have CLM(Client LifeCycle Management) Framework in Pega that can help you with your needs.
+				 		&nbsp&nbsp&nbspWe have CLM(Client LifeCycle Management) Framework in Pega that can help you with your needs.
 				 		The CLM framework is composed of the following frameworks:
 				 		<p></p>
 				 		<ol>
